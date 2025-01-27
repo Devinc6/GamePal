@@ -4,7 +4,7 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Welcome to GamePal!")
+                Text("Welcome to yanks")
                     .font(.title)
                     .padding()
                 
