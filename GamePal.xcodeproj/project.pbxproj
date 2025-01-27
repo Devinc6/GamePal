@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AC269A432D443D2E00FE07BF /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = AC269A422D443D2E00FE07BF /* Auth */; };
+		AC269A452D443D2E00FE07BF /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = AC269A442D443D2E00FE07BF /* Functions */; };
+		AC269A472D443D2E00FE07BF /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = AC269A462D443D2E00FE07BF /* PostgREST */; };
+		AC269A492D443D2E00FE07BF /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = AC269A482D443D2E00FE07BF /* Realtime */; };
+		AC269A4B2D443D2E00FE07BF /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = AC269A4A2D443D2E00FE07BF /* Storage */; };
+		AC269A4E2D443D8A00FE07BF /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = AC269A4D2D443D8A00FE07BF /* Supabase */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		AC4032442D43E67700337CD8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +38,22 @@
 		AC40324D2D43E67700337CD8 /* GamePalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GamePalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AC269A572D4440AB00FE07BF /* Exceptions for "GamePal" folder in "GamePal" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AC4032322D43E67500337CD8 /* GamePal */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		AC4032352D43E67500337CD8 /* GamePal */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AC269A572D4440AB00FE07BF /* Exceptions for "GamePal" folder in "GamePal" target */,
+			);
 			path = GamePal;
 			sourceTree = "<group>";
 		};
@@ -52,6 +74,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC269A472D443D2E00FE07BF /* PostgREST in Frameworks */,
+				AC269A452D443D2E00FE07BF /* Functions in Frameworks */,
+				AC269A4E2D443D8A00FE07BF /* Supabase in Frameworks */,
+				AC269A432D443D2E00FE07BF /* Auth in Frameworks */,
+				AC269A4B2D443D2E00FE07BF /* Storage in Frameworks */,
+				AC269A492D443D2E00FE07BF /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +100,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC269A4C2D443D8A00FE07BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AC40322A2D43E67500337CD8 = {
 			isa = PBXGroup;
 			children = (
 				AC4032352D43E67500337CD8 /* GamePal */,
 				AC4032462D43E67700337CD8 /* GamePalTests */,
 				AC4032502D43E67700337CD8 /* GamePalUITests */,
+				AC269A4C2D443D8A00FE07BF /* Frameworks */,
 				AC4032342D43E67500337CD8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +148,12 @@
 			);
 			name = GamePal;
 			packageProductDependencies = (
+				AC269A422D443D2E00FE07BF /* Auth */,
+				AC269A442D443D2E00FE07BF /* Functions */,
+				AC269A462D443D2E00FE07BF /* PostgREST */,
+				AC269A482D443D2E00FE07BF /* Realtime */,
+				AC269A4A2D443D2E00FE07BF /* Storage */,
+				AC269A4D2D443D8A00FE07BF /* Supabase */,
 			);
 			productName = GamePal;
 			productReference = AC4032332D43E67500337CD8 /* GamePal.app */;
@@ -195,6 +237,9 @@
 			);
 			mainGroup = AC40322A2D43E67500337CD8;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AC269A412D443D2E00FE07BF /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AC4032342D43E67500337CD8 /* Products */;
 			projectDirPath = "";
@@ -398,6 +443,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GamePal/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GamePal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -426,6 +472,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GamePal/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GamePal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -552,6 +599,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC269A412D443D2E00FE07BF /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC269A422D443D2E00FE07BF /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC269A412D443D2E00FE07BF /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		AC269A442D443D2E00FE07BF /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC269A412D443D2E00FE07BF /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		AC269A462D443D2E00FE07BF /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC269A412D443D2E00FE07BF /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		AC269A482D443D2E00FE07BF /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC269A412D443D2E00FE07BF /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		AC269A4A2D443D2E00FE07BF /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC269A412D443D2E00FE07BF /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		AC269A4D2D443D8A00FE07BF /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC269A412D443D2E00FE07BF /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC40322B2D43E67500337CD8 /* Project object */;
 }
