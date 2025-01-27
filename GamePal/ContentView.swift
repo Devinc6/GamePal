@@ -8,14 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var authViewModel: AuthViewModel
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        if authViewModel.isAuthenticated {
+            TabView {
+                HomeView()
+                    .tabItem {
+                        Image(systemName: "house.fill")
+                        Text("Home")
+                    }
+                
+                HealthView()
+                    .tabItem {
+                        Image(systemName: "heart.fill")
+                        Text("Health")
+                    }
+                
+                SettingsView()
+                    .tabItem {
+                        Image(systemName: "gear")
+                        Text("Settings")
+                    }
+            }
+        } else {
+            AuthView()
         }
-        .padding()
     }
 }
 
